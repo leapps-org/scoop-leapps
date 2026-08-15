@@ -2,6 +2,14 @@
 
 Scoop manifests for installing LEAPPs tools and LAVA on Windows.
 
+## Need Scoop?
+
+Scoop is a command-line package manager for Windows. It installs apps into your
+user profile, keeps command-line tools on your PATH, and can update installed
+tools with a single command.
+
+Install Scoop first if you do not already have it: https://scoop.sh
+
 ## Add the bucket
 
 ```powershell
