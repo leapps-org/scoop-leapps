@@ -1,0 +1,36 @@
+{
+    "version": "2026.3.0",
+    "description": "Digital forensics tool for analyzing vehicle infotainment system artifacts with a graphical interface.",
+    "homepage": "https://github.com/abrignoni/VLEAPP",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.0/vleappGUI-v2026.3.0-Windows_x86_64.zip",
+            "hash": "9a250f71523d2a3c2dd6bad0f411d184309833644c504ca45675d75b7cb8e944"
+        },
+        "arm64": {
+            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.0/vleappGUI-v2026.3.0-Windows_arm64.zip",
+            "hash": "c236519f3fb7cd61fd79bce5c076d3c6764013a6df65c65388cadc196d9c8306"
+        }
+    },
+    "shortcuts": [
+        [
+            "vleappGUI.exe",
+            "VLEAPP GUI"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/abrignoni/VLEAPP",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/vleappGUI-v$version-Windows_x86_64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/vleappGUI-v$version-Windows_arm64.zip"
+            }
+        }
+    }
+}

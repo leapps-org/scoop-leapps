@@ -1,0 +1,31 @@
+{
+    "version": "2026.3.0",
+    "description": "Digital forensics tool for parsing Android backup files, images, and artifacts.",
+    "homepage": "https://github.com/abrignoni/aLEAPP",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.0/aleapp-v2026.3.0-Windows_x86_64.zip",
+            "hash": "348b2dc7b4b0a32eafcada9a16b2335135a830e0af76f9085cead59039712c70"
+        },
+        "arm64": {
+            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.0/aleapp-v2026.3.0-Windows_arm64.zip",
+            "hash": "dd146fb5a4d52de18a1bb89272a94af619500476ce53b3f9fa327914478b20b7"
+        }
+    },
+    "bin": "aleapp.exe",
+    "checkver": {
+        "github": "https://github.com/abrignoni/aLEAPP",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/abrignoni/aLEAPP/releases/download/v$version/aleapp-v$version-Windows_x86_64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/abrignoni/aLEAPP/releases/download/v$version/aleapp-v$version-Windows_arm64.zip"
+            }
+        }
+    }
+}

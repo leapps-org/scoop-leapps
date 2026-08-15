@@ -1,0 +1,23 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Scoop
+        shell: pwsh
+        run: |
+          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+          Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+      - name: Validate manifests
+        shell: pwsh
+        run: |
+          scoop bucket add leapps $PWD
+          foreach ($manifest in Get-ChildItem bucket -Filter *.json) {
+            scoop info "leapps/$($manifest.BaseName)"
+          }
