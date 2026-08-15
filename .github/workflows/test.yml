@@ -18,7 +18,6 @@ jobs:
       - name: Validate manifests
         shell: pwsh
         run: |
-          scoop bucket add leapps $PWD
           foreach ($manifest in Get-ChildItem bucket -Filter *.json) {
-            scoop info "leapps/$($manifest.BaseName)"
+            scoop info $manifest.FullName
           }
