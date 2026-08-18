@@ -1,16 +1,16 @@
 {
-    "version": "2026.3.0",
+    "version": "2026.3.1",
     "description": "Digital forensics tool for analyzing iOS artifacts with a graphical interface.",
     "homepage": "https://github.com/abrignoni/iLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.0/ileappGUI-v2026.3.0-Windows_x86_64.zip",
-            "hash": "e9c947135f4762c7ca9538509f0905e50ce3212b436a90a900d91f30694380fc"
+            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.1/ileappGUI-v2026.3.1-Windows_x86_64.zip",
+            "hash": "ff319f72f17cb09f4eef6dd63e7b26071731a3b7c5507f63a158b2217870180e"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.0/ileappGUI-v2026.3.0-Windows_arm64.zip",
-            "hash": "1289691ff075e4cc46d5618eee302ad97f935c20233765c4e0ec4855b13f64e1"
+            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.1/ileappGUI-v2026.3.1-Windows_arm64.zip",
+            "hash": "00af18159e7577f37055c9a9de93471c0e8c9fcc6ac6f96caf017031857d32af"
         }
     },
     "shortcuts": [
