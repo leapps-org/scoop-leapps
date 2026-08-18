@@ -1,16 +1,16 @@
 {
-    "version": "2026.3.0",
+    "version": "2026.3.1",
     "description": "Digital forensics tool for analyzing Android artifacts with a graphical interface.",
     "homepage": "https://github.com/abrignoni/aLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.0/aleappGUI-v2026.3.0-Windows_x86_64.zip",
-            "hash": "2a2c03ae2b6d54b081e14cf492dfcd72d914fac32d20205e2d1cc3253a1b7250"
+            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.1/aleappGUI-v2026.3.1-Windows_x86_64.zip",
+            "hash": "52fd9ddc744eb455b1e2bbbe5bac7bb5c604d967259ba82902ea61e85077e9dc"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.0/aleappGUI-v2026.3.0-Windows_arm64.zip",
-            "hash": "9ed4750db9fabe2389361f172f5f517024295963b5360054df4ef06b99282601"
+            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.1/aleappGUI-v2026.3.1-Windows_arm64.zip",
+            "hash": "ccdb2faed8507ef2ad545936638584b01f9679de2853e14a8454e9cbfc463328"
         }
     },
     "shortcuts": [
