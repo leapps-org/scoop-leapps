@@ -1,16 +1,16 @@
 {
-    "version": "2026.3.1",
+    "version": "2026.3.2",
     "description": "Digital forensics tool for parsing vehicle infotainment system backup files, images, and artifacts.",
     "homepage": "https://github.com/abrignoni/VLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.1/vleapp-v2026.3.1-Windows_x86_64.zip",
-            "hash": "a611f28ff57f61918b8bd1ede9d0cff3854b53d9ff5f0b68a8669342a73ed417"
+            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.2/vleapp-v2026.3.2-Windows_x86_64.zip",
+            "hash": "f4c9b4e2f0356e016bc84a799eab167c0a87e49a4403fc050fd1163e57dca6d4"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.1/vleapp-v2026.3.1-Windows_arm64.zip",
-            "hash": "13f3e3c714317e501e7fa8f2e13b32abeac5deabb5af4667cb372b10a58b8f3e"
+            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.2/vleapp-v2026.3.2-Windows_arm64.zip",
+            "hash": "1cc1df5e8329d239add1104260a6374b7335ce5a5e1632720484ce57490ff935"
         }
     },
     "bin": "vleapp.exe",
