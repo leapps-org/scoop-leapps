@@ -1,16 +1,16 @@
 {
-    "version": "2026.3.1",
+    "version": "2026.3.3",
     "description": "Digital forensics tool for parsing iOS backup files, images, and artifacts.",
     "homepage": "https://github.com/abrignoni/iLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.1/ileapp-v2026.3.1-Windows_x86_64.zip",
-            "hash": "f5f62b0a4c14c13c50d1e8dedb2d577250679fa2d65bca396fb99b649a68abaf"
+            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.3/ileapp-v2026.3.3-Windows_x86_64.zip",
+            "hash": "0c7a09e62b68ac510d635360b812e0e55d07f35c9b0ac5e19e1521f6db50c9eb"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.1/ileapp-v2026.3.1-Windows_arm64.zip",
-            "hash": "f05985bcdfadd440ff0bfb03c0cea6cfaaeabe2f21e7eb349cbbf2b3c372b28e"
+            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.3/ileapp-v2026.3.3-Windows_arm64.zip",
+            "hash": "7ca6b4c2092986909054adfe91916a13acc75d46c2f4ec4eb5775e9b651ef551"
         }
     },
     "bin": "ileapp.exe",
