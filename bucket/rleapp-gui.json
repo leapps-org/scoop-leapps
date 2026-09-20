@@ -1,16 +1,16 @@
 {
-    "version": "2026.4.0",
+    "version": "2026.4.1",
     "description": "Digital forensics tool for parsing service provider warrant or data return files with a graphical interface.",
     "homepage": "https://github.com/abrignoni/RLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.4.0/rleappGUI-v2026.4.0-Windows_x86_64.zip",
-            "hash": "00205f2994c9cff6d8df46ff41b65d395b00394cc6bc935e148ae6adadb9084b"
+            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.4.1/rleappGUI-v2026.4.1-Windows_x86_64.zip",
+            "hash": "83d2f167bf4d2c3a8d6a6440748bc8c198e02b93deb9ead620d3336f8e67f23c"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.4.0/rleappGUI-v2026.4.0-Windows_arm64.zip",
-            "hash": "b1e3d52fc2e2198755081c6fc7f03a51f87671a47404f4b9ff05b4fb8f447d1b"
+            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.4.1/rleappGUI-v2026.4.1-Windows_arm64.zip",
+            "hash": "c9150e5b29fd9191f23c3ce01490587952e920222476142c3ea6164cc10e1c67"
         }
     },
     "shortcuts": [
