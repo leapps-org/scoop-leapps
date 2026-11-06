@@ -1,30 +1,41 @@
 {
-    "version": "2026.3.1",
+    "version": "2026.4.5",
     "description": "Digital forensics tool for parsing Android backup files, images, and artifacts.",
     "homepage": "https://github.com/abrignoni/aLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.1/aleapp-v2026.3.1-Windows_x86_64.zip",
-            "hash": "2a9c3f1987b22ba675a22f04e8d099d1c3d550b629a8d17a0c04c75f6a5dba97"
+            "url": "https://github.com/abrignoni/ALEAPP/releases/download/v2026.4.5/ALEAPP-2026.4.5-windows-x64-portable.zip",
+            "hash": "954b9603bee1b1a3eec841694d8ed3d6499aa9d9b5ddc0d5bd44783ca5ab949b"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/aLEAPP/releases/download/v2026.3.1/aleapp-v2026.3.1-Windows_arm64.zip",
-            "hash": "310238ffc143c67348df1bb2870fa4f83d83b5e7542afc5256a0717096cf01ee"
+            "url": "https://github.com/abrignoni/ALEAPP/releases/download/v2026.4.5/ALEAPP-2026.4.5-windows-arm64-portable.zip",
+            "hash": "2f45efc5b96b806f9b6e5c463ff0e12cdabace42d8c9a2a3f9ae6d042d5544f9"
         }
     },
     "bin": "aleapp.exe",
+    "shortcuts": [
+        [
+            "aleapp.exe",
+            "aLEAPP"
+        ]
+    ],
     "checkver": {
-        "github": "https://github.com/abrignoni/aLEAPP",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/abrignoni/aLEAPP"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/abrignoni/aLEAPP/releases/download/v$version/aleapp-v$version-Windows_x86_64.zip"
+                "url": "https://github.com/abrignoni/ALEAPP/releases/download/v$version/ALEAPP-$version-windows-x64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/ALEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             },
             "arm64": {
-                "url": "https://github.com/abrignoni/aLEAPP/releases/download/v$version/aleapp-v$version-Windows_arm64.zip"
+                "url": "https://github.com/abrignoni/ALEAPP/releases/download/v$version/ALEAPP-$version-windows-arm64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/ALEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             }
         }
     }

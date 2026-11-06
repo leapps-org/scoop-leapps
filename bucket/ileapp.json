@@ -1,30 +1,41 @@
 {
-    "version": "2026.3.1",
+    "version": "2026.4.6",
     "description": "Digital forensics tool for parsing iOS backup files, images, and artifacts.",
     "homepage": "https://github.com/abrignoni/iLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.1/ileapp-v2026.3.1-Windows_x86_64.zip",
-            "hash": "f5f62b0a4c14c13c50d1e8dedb2d577250679fa2d65bca396fb99b649a68abaf"
+            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.4.6/iLEAPP-2026.4.6-windows-x64-portable.zip",
+            "hash": "531b1eecde0d71a10d6e5298ef565e3bc2110997ea5773761f4e46fcbe467e47"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.3.1/ileapp-v2026.3.1-Windows_arm64.zip",
-            "hash": "f05985bcdfadd440ff0bfb03c0cea6cfaaeabe2f21e7eb349cbbf2b3c372b28e"
+            "url": "https://github.com/abrignoni/iLEAPP/releases/download/v2026.4.6/iLEAPP-2026.4.6-windows-arm64-portable.zip",
+            "hash": "1fe272bd3fc4dae70714cc13024b380f4ae1858483d7e3595a0a7dfacf085b4f"
         }
     },
     "bin": "ileapp.exe",
+    "shortcuts": [
+        [
+            "ileapp.exe",
+            "iLEAPP"
+        ]
+    ],
     "checkver": {
-        "github": "https://github.com/abrignoni/iLEAPP",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/abrignoni/iLEAPP"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/abrignoni/iLEAPP/releases/download/v$version/ileapp-v$version-Windows_x86_64.zip"
+                "url": "https://github.com/abrignoni/iLEAPP/releases/download/v$version/iLEAPP-$version-windows-x64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/iLEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             },
             "arm64": {
-                "url": "https://github.com/abrignoni/iLEAPP/releases/download/v$version/ileapp-v$version-Windows_arm64.zip"
+                "url": "https://github.com/abrignoni/iLEAPP/releases/download/v$version/iLEAPP-$version-windows-arm64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/iLEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             }
         }
     }

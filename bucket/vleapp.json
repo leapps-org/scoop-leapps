@@ -1,30 +1,41 @@
 {
-    "version": "2026.3.0",
+    "version": "2026.4.5",
     "description": "Digital forensics tool for parsing vehicle infotainment system backup files, images, and artifacts.",
     "homepage": "https://github.com/abrignoni/VLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.0/vleapp-v2026.3.0-Windows_x86_64.zip",
-            "hash": "fa7bdd5414c2fdf226e7b7ea7fcd5f7bb8700c326311e70945e973e607be6dbc"
+            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.4.5/VLEAPP-2026.4.5-windows-x64-portable.zip",
+            "hash": "9bd382fc252ef23171c55170311745288b63a561c6bc2a6115d7a7c381b3e5ee"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.3.0/vleapp-v2026.3.0-Windows_arm64.zip",
-            "hash": "c4d7510d3abcc4d4e285fcdfc64489f8d4bd1d2afab54b0d8523058c67583953"
+            "url": "https://github.com/abrignoni/VLEAPP/releases/download/v2026.4.5/VLEAPP-2026.4.5-windows-arm64-portable.zip",
+            "hash": "a696647559f7b7f544ea89bc8e0e177b335a6f08f99a1d3b7ddedcbd79cae172"
         }
     },
     "bin": "vleapp.exe",
+    "shortcuts": [
+        [
+            "vleapp.exe",
+            "VLEAPP"
+        ]
+    ],
     "checkver": {
-        "github": "https://github.com/abrignoni/VLEAPP",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/abrignoni/VLEAPP"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/vleapp-v$version-Windows_x86_64.zip"
+                "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/VLEAPP-$version-windows-x64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             },
             "arm64": {
-                "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/vleapp-v$version-Windows_arm64.zip"
+                "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/VLEAPP-$version-windows-arm64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/VLEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             }
         }
     }

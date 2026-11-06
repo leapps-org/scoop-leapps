@@ -1,30 +1,41 @@
 {
-    "version": "2026.3.0",
+    "version": "2026.4.5",
     "description": "Digital forensics tool for parsing service provider warrant or data return files.",
     "homepage": "https://github.com/abrignoni/RLEAPP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.3.0/rleapp-v2026.3.0-Windows_x86_64.zip",
-            "hash": "470e9fd2d09a3b4786253f39377129126cdf7fef469b1cbe42aadd56f0373392"
+            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.4.5/RLEAPP-2026.4.5-windows-x64-portable.zip",
+            "hash": "de424bf5e27a79609603b82df526380971de0e50e77080a44baa98dcf9e31fba"
         },
         "arm64": {
-            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.3.0/rleapp-v2026.3.0-Windows_arm64.zip",
-            "hash": "b674eb827f2d946669c1d0a9bedaf0bbd55de5a7bab82106892c2c49972867fd"
+            "url": "https://github.com/abrignoni/RLEAPP/releases/download/v2026.4.5/RLEAPP-2026.4.5-windows-arm64-portable.zip",
+            "hash": "a10ce8baf3bc5a7b19da390397d880ba2bdcea8472e852e3223c4d5fc54e3c7b"
         }
     },
     "bin": "rleapp.exe",
+    "shortcuts": [
+        [
+            "rleapp.exe",
+            "RLEAPP"
+        ]
+    ],
     "checkver": {
-        "github": "https://github.com/abrignoni/RLEAPP",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/abrignoni/RLEAPP"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/abrignoni/RLEAPP/releases/download/v$version/rleapp-v$version-Windows_x86_64.zip"
+                "url": "https://github.com/abrignoni/RLEAPP/releases/download/v$version/RLEAPP-$version-windows-x64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/RLEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             },
             "arm64": {
-                "url": "https://github.com/abrignoni/RLEAPP/releases/download/v$version/rleapp-v$version-Windows_arm64.zip"
+                "url": "https://github.com/abrignoni/RLEAPP/releases/download/v$version/RLEAPP-$version-windows-arm64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/abrignoni/RLEAPP/releases/download/v$version/SHA256SUMS.txt"
+                }
             }
         }
     }
